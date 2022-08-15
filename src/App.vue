@@ -17,6 +17,6 @@ defineExpose({
 
 <style module>
 .root {
-  @apply flex justify-center items-center h-screen;
+  @apply flex justify-center py-10 px-12;
 }
 </style>

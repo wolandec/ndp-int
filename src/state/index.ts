@@ -1,8 +1,9 @@
-import { Pokedex } from '../types/types';
+import { Pokedex, Profession } from '../types/types';
 import { ref } from 'vue';
 import { getPokedex } from '../api/Pockedex';
 
 export const pokedex = ref<Pokedex | null>(null);
+export const allProfessions = Object.values(Profession)
 
 export async function loadPockedex () {
   if (pokedex.value)
